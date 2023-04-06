@@ -1,7 +1,5 @@
 -- Tp MySQL made by Amandine Guenassia  
-
 -- TP2  
-
 --On créé la table utilisateur 
 
 CREATE TABLE new_schema.utilisateur( 
