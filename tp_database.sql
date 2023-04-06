@@ -456,5 +456,3 @@ GROUP BY idprofil
 
 HAVING (MAX(salaire) - MIN(salaire)) > 10000; 
 
-*.sql linguist-detectable=true
-*.sql linguist-language=sql
