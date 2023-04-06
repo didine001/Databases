@@ -266,7 +266,6 @@ WHERE utilisateur.idprofile IS NULL;
  
 
 -- TP9 
-
 -- On crée la table entreprise avec   `identreprise` INT NOT NULL AUTO_INCREMENT primary key 
 
 CREATE TABLE `new_schema`.`entreprise` ( 
@@ -290,17 +289,12 @@ CREATE TABLE `new_schema`.`entreprise` (
 -- On crée la table de jointure utilisateur_entreprise avec   `idutilisateur_entreprise` INT NOT NULL (`idutilisateur_entreprise`) PRIMARY KEY AUTO_INCREMENT, `idutilisateur` NOT NULL, `identreprise` NOT NULL,  
 
 CREATE TABLE `new_schema`.`utilisateur_entreprise` ( 
-
   `idutilisateur_entreprise` INT NOT NULL AUTO_INCREMENT, 
-
   `idutilisateur` INT NOT NULL, 
-
   `identreprise` INT NOT NULL, 
-
   PRIMARY KEY (`idutilisateur_entreprise`) 
 
 ); 
-
 -- On ajoute a utilisateur_entreprise une clé étrangère fk_identreprise 
 
 ALTER TABLE `new_schema`.`utilisateur_entreprise` 
@@ -441,7 +435,6 @@ GROUP BY idprofile
 
 HAVING Moyenne_Salaire > 1800; 
 
- 
 
 -- Pour n'avoir que les salaires moyens supérieurs à 1800 
 
